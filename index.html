@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>PHero_tube</title>
+  </head>
+  <body>
+    <nav class="navbar mt-4">
+      <div class="container justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="/Logo.png" alt="Bootstrap" width="175px" height="39px" />
+        </a>
+        <button onclick="sort()" type="button" class="btn btn-secondary btn-lg">
+          View by Sort
+        </button>
+        <button id="blog" type="button" class="btn btn-danger">blog</button>
+        <!-- <button onclick="loadData()">check</button> -->
+      </div>
+    </nav>
+    <section class="mt-3 container">
+      <div
+        class="container d-flex flex-wrap align-items-center justify-content-center gap-5 p-5"
+      >
+        <button
+          onclick="loadData()"
+          type="button"
+          class="btn btn-outline-danger"
+        >
+          All
+        </button>
+        <button
+          onclick="loadMusic()"
+          type="button"
+          class="btn btn-outline-danger"
+        >
+          Music
+        </button>
+        <button
+          onclick="loadComedy()"
+          type="button"
+          class="btn btn-outline-danger"
+        >
+          Comedy
+        </button>
+        <button
+          onclick="loadDrawing()"
+          type="button"
+          class="btn btn-outline-danger"
+        >
+          Drawing
+        </button>
+      </div>
+    </section>
+    <!-- items -->
+    <p id="category_id">1000</p>
+    <div id="item_container" class="mt-2"></div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="app.js" />
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
