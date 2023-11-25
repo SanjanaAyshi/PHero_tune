@@ -20,12 +20,20 @@
     <nav class="navbar mt-4">
       <div class="container justify-content-between">
         <a class="navbar-brand" href="#">
-          <img src="/Logo.png" alt="Bootstrap" width="175px" height="39px" />
+          <img src="./Logo.png" alt="Bootstrap" width="175px" height="39px" />
         </a>
         <button onclick="sort()" type="button" class="btn btn-secondary btn-lg">
           View by Sort
         </button>
-        <button id="blog" type="button" class="btn btn-danger">blog</button>
+        <button onclick="blogPage()" type="button" class="btn btn-danger">
+          blog
+        </button>
+        <script>
+          // JavaScript function to navigate to page2.html
+          function blogPage() {
+            window.location.href = "blog.html";
+          }
+        </script>
         <!-- <button onclick="loadData()">check</button> -->
       </div>
     </nav>
